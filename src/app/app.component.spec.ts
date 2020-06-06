@@ -35,7 +35,7 @@ describe('AppComponent', () => {
 
   //Test DOM manipulation (Verify a certain html element exists)
   it('test if button to reset counter exists', () => {
-    const text = fixture.debugElement.nativeElement.querySelector('.btn.btn-warning');
-    expect(text).toBeDefined();
+    const buttonReset = fixture.debugElement.nativeElement.querySelector('.btn.btn-warning');
+    expect(buttonReset).toBeDefined();
   });
 });
