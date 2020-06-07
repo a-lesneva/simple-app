@@ -27,13 +27,13 @@ describe('AppComponent', () => {
   // });
 
   // test where an exception occurs at runtime
-  it('test an exception for reset action when counter=0', () => {
+  it('an exception occurs for reset action when counter = 0', () => {
     myCounter = new AppComponent();
     myCounter.counter = 0;
     expect(myCounter.reset).toThrow("The counter is already 0!");
   });
   // a test where a function is tested in an application and show result verification
-  it('test if increment returns counter+1', () => {
+  it('increment function returns 26 for initial value 25', () => {
     myCounter = new AppComponent();
     myCounter.counter = 25;
     myCounter.increment();
@@ -41,7 +41,7 @@ describe('AppComponent', () => {
   }); 
 
   //Test DOM manipulation (Verify a certain html element exists)
-  it('test if button to reset the counter exists', () => {
+  it('button to reset the counter exists', () => {
     const buttonReset = fixture.debugElement.nativeElement.querySelector('.btn.btn-warning');
     expect(buttonReset).toBeDefined();
   });
