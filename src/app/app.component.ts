@@ -13,6 +13,12 @@ export class AppComponent {
     
   decrement = () => this.counter--;
 
-  reset = () => this.counter = 0;
-
+  reset = () => {
+    if (this.counter !== 0){
+      return this.counter = 0
+    }
+     else {
+      throw "The counter is already 0!";
+    }
+  }
 }
