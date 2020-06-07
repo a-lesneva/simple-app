@@ -1,6 +1,5 @@
  import { TestBed, async, ComponentFixture } from '@angular/core/testing';
- import { AppComponent } from './app.component';
-import { By } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   let myCounter: AppComponent;
@@ -32,6 +31,7 @@ describe('AppComponent', () => {
     myCounter.counter = 0;
     expect(myCounter.reset).toThrow("The counter is already 0!");
   });
+  
   // a test where a function is tested in an application and show result verification
   it('increment function returns 26 for initial value 25', () => {
     myCounter = new AppComponent();

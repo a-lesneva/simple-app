@@ -21,4 +21,5 @@ export class AppComponent {
       throw "The counter is already 0!";
     }
   }
+
 }
